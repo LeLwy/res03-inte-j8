@@ -1,0 +1,116 @@
+@import "vars";
+@import "reset";
+
+html{
+    
+    font-size: 16px;
+    font-family: $mainFont;
+    
+    body{
+        
+        /**********NAV RESEAU SOCIAUX**********/
+        
+        nav.rs-nav{
+            
+            &>ul{
+                
+                &>li{
+                    
+                    &>a{
+                        
+                    }
+                }
+            }
+        }
+        
+        &>header{
+            
+            display: grid;
+            grid-template-rows: 1.8fr 1fr;
+            
+            a{
+                
+                color: $grey;
+            }
+            
+            a:hover{
+                
+                color: $lightBlue;
+            }
+            
+            &>section{
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                &>figure{
+                    
+                    &>img{
+                        
+                    }
+                    
+                    &>figcaption{
+                        
+                        display: none;
+                    }
+                }
+                
+                &>ul{
+                    
+                    &>li{
+                        
+                        display: inline-block;
+                    }
+                }
+                
+                &>nav.header-nav{
+                
+                    &>ul{
+                        
+                        &>li{
+                            
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            
+            &>section{
+                
+                width: 50%;
+            }
+        }
+        
+        &>main{
+            
+            /**********DISPLAY DES POSTS PRINCIPAUX**********/
+            
+            article.main-post{
+                
+                &header{
+                    
+                }
+                
+                &>section{
+                    
+                }
+                
+                &>footer{
+                    
+                }
+            }
+            
+            /**********DISPLAY DU POST MIS EN AVANT**********/
+            
+            /**********DISPLAY DES DERNIERS POSTS**********/
+            
+            /**********DISPLAY DES POSTS DE L'ASIDE**********/
+        }
+        
+        &>footer{
+            
+        }
+    }
+}
