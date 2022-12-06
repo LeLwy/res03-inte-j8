@@ -1,0 +1,168 @@
+/*COULEURS*/
+/*POLICES*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+}
+html body {
+  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  height: 100vh;
+}
+html body a {
+  text-decoration: none;
+  color: #ffffff;
+}
+html body h1, html body h2, html body h3, html body h4, html body h5 {
+  color: #ffffff;
+}
+html body h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+html body h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7400b8;
+}
+html body h4 {
+  font-size: 1.2rem;
+  color: #64dfdf;
+}
+html body h5 {
+  font-size: 0.9rem;
+}
+html body p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html body > header {
+  padding: 3vh 40vw 3vh 10vw;
+  border-bottom: solid 1px #64dfdf;
+}
+html body > header > h1 {
+  display: none;
+}
+html body > header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body > header nav ul li a {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+html body main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+html body main section:first-of-type {
+  padding: 15vh 12vw;
+}
+html body main section:last-of-type {
+  padding: 15vh 5vw;
+}
+html body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body main section > article {
+  width: fit-content;
+  padding: 1vh 1vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+html body main section > article > header {
+  border-bottom: solid 1px #64dfdf;
+  padding-bottom: 1vh;
+}
+html body main section > article > header h3 {
+  position: relative;
+  top: 1.8rem;
+}
+html body main section > article > header #album-img {
+  max-height: 3rem;
+  margin-left: 3.5vw;
+  position: relative;
+  top: 0.7rem;
+}
+html body main section > article ul {
+  padding: 0 1vw;
+}
+html body main section > article ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1vh 0;
+  border-bottom: solid 1px #006466;
+}
+html body main section > article ul li h5:not(:first-of-type) {
+  font-size: 0.5rem;
+}
+html body main section > article ul li img {
+  max-height: 1.2rem;
+  margin-right: 0.5vw;
+}
+html body main section > article ul li:last-of-type {
+  border: none;
+}
+html body main section#pricing {
+  grid-column: 1/3;
+  heigth: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
