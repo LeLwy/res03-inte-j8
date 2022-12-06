@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+html body {
+  /**********NAV RESEAU SOCIAUX**********/
+  /**********NAV RESEAU SOCIAUX**********/
+  /**********NAV RESEAU SOCIAUX**********/
+  /**********NAV RESEAU SOCIAUX**********/
+  /**********NAV RESEAU SOCIAUX**********/
+  /**********LIENS**********/
+  /*TAGS*/
+  /**********FORMULAIRE DE SOUSCRIPTION**********/
+  /**********LISTES**********/
+  /**********NAV RESEAU SOCIAUX**********/
+}
+html body a.blue-tag {
+  color: #5869DA;
+}
+html body a.green-tag {
+  color: #09815C;
+}
+html body a.orange-tag {
+  color: #e38836;
+}
+html body a.red-tag {
+  color: #e3363e;
+}
+html body form.sub-form {
+  display: flex;
+  flex-direction: row;
+}
+html body form.sub-form input {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+html body form.sub-form input:first-of-type {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: none;
+  color: #9b9b9b;
+  border-color: #f7f8f9;
+}
+html body form.sub-form input:last-of-type {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #5869DA;
+  border-color: #5869DA;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+html body li {
+  list-style-type: none;
+}
+html body nav.rs-nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 10rem;
+  min-height: 4rem;
+}
+html body nav.rs-nav > ul > li:not(:last-of-type) {
+  border-radius: 20px;
+}
+html body nav.rs-nav > ul > li:not(:last-of-type) > a {
+  color: #FFFFFF;
+}
+html body nav.rs-nav > ul > li:first-of-type {
+  background-color: #2d3d8b;
+}
+html body nav.rs-nav > ul > li:nth-of-type(2) {
+  background-color: #4da7d4;
+}
+html body nav.rs-nav > ul > li:nth-of-type(3) {
+  background-color: #e38836;
+}
+html body nav.rs-nav > ul > li {
+  margin-right: 1vw;
+  padding: 0.5rem;
+}
+html body > header a {
+  color: #9b9b9b;
+}
+html body > header a:hover {
+  color: #4da7d4;
+}
+html body > header > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vw;
+}
+html body > header > section > figure > figcaption {
+  display: none;
+}
+html body > header > section > nav.header-nav {
+  width: 80%;
+}
+html body > header > section > nav.header-nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body > header > section > nav.header-nav > ul > li > a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+html body > header > section > section {
+  display: flex;
+  flex-direction: column;
+}
+html body > header > section > section h1 {
+  font-size: 3.7rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+html body > header > section > section h1 strong {
+  color: #5869DA;
+}
+html body > header > section > section p {
+  margin-bottom: 1.5rem;
+}
+html body > header > section > section p:first-of-type {
+  font-size: 3rem;
+  font-weight: 800;
+}
+html body > header > section > section p:last-of-type {
+  font-size: 1.4rem;
+  color: #687385;
+}
+html body > header > section:last-of-type {
+  background-color: #f7f8f9;
+  padding: 4rem;
+}
+html body > main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 0 5vw;
+  /**********DISPLAY DES SECTIONS**********/
+  /**********DISPLAY DES POSTS ASSOCIÉS**********/
+  /**********DISPLAY DU POST MIS EN AVANT**********/
+  /**********DISPLAY DES DERNIERS POSTS**********/
+  /**********DISPLAY DES POSTS DE L'ASIDE**********/
+}
+html body > main > section {
+  display: grid;
+  padding: 5vh 0;
+}
+html body > main > section h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+html body > main > section#featured-posts {
+  grid-column: 1/3;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+html body > main > section#featured-posts h2 {
+  grid-column: 1/2;
+}
+html body > main > section#featured-posts ul {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+}
+html body > main > section#featured-posts ul li {
+  margin-left: 1rem;
+  color: #9b9b9b;
+}
+html body > main > section#travel-tips {
+  grid-column: 1/2;
+}
+html body > main > section#latest-posts {
+  grid-column: 1/2;
+}
+html body > main > section#others {
+  grid-column: 1/3;
+}
+html body > main > aside {
+  grid-column: 2/3;
+}
+html body > main article.featured-post > header > figure > img {
+  width: 100%;
+}
+html body > main article.ahead-post {
+  grid-column: 1/3;
+}
+html body > main article.ahead-post > figure > img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

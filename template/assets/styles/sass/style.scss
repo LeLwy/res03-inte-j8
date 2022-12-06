@@ -9,24 +9,118 @@ html{
     body{
         
         /**********NAV RESEAU SOCIAUX**********/
+        /**********NAV RESEAU SOCIAUX**********/
+        /**********NAV RESEAU SOCIAUX**********/
+        /**********NAV RESEAU SOCIAUX**********/
+        /**********NAV RESEAU SOCIAUX**********/
+        /**********LIENS**********/
+        
+        
+        /*TAGS*/
+        
+        a.blue-tag{
+            color: $blue;
+        }
+        
+        a.green-tag{
+            color: $green;
+        }
+        
+        a.orange-tag{
+            color: $orange;
+        }
+        
+        a.red-tag{
+            color: $red;
+        }
+        
+        /**********FORMULAIRE DE SOUSCRIPTION**********/
+        
+        form.sub-form{
+            
+            display: flex;
+            flex-direction: row;
+            
+            input{
+                
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+            
+            input:first-of-type{
+                
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-right: none;
+                color: $grey;
+                border-color: $lightGrey;
+            }
+            
+            input:last-of-type{
+                
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                background-color: $blue;
+                border-color: $blue;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+        
+        /**********LISTES**********/
+        
+        li{
+            
+            list-style-type: none;
+        }
+        
+        /**********NAV RESEAU SOCIAUX**********/
         
         nav.rs-nav{
             
             &>ul{
                 
-                &>li{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 10rem;
+                min-height: 4rem;
+                
+                &>li:not(:last-of-type){
+                    
+                    border-radius: 20px;
                     
                     &>a{
                         
+                        color: $white;
                     }
+                }
+                
+                &>li:first-of-type{
+                    
+                    background-color: $darkBlue;
+                }
+                
+                &>li:nth-of-type(2){
+                    
+                    background-color: $lightBlue;
+                }
+                
+                &>li:nth-of-type(3){
+                    
+                    background-color: $orange;
+                }
+                
+                &>li{
+                    
+                    margin-right: 1vw;
+                    padding: .5rem;
                 }
             }
         }
         
         &>header{
-            
-            display: grid;
-            grid-template-rows: 1.8fr 1fr;
             
             a{
                 
@@ -44,6 +138,7 @@ html{
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                padding: 1vh 5vw;
                 
                 &>figure{
                     
@@ -61,36 +156,149 @@ html{
                     
                     &>li{
                         
-                        display: inline-block;
                     }
                 }
                 
                 &>nav.header-nav{
+                    
+                        width: 80%;
                 
                     &>ul{
                         
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        
                         &>li{
                             
-                            display: inline-block;
+                            &>a{
+                                
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
                         }
+                    }
+                }
+            
+                &>section{
+                    
+                    display:flex;
+                    flex-direction: column;
+                        
+                    h1{
+                        
+                        font-size: 3.7rem;
+                        font-weight: 800;
+                        margin-bottom: 1.5rem;
+                        
+                        strong{
+                        
+                        color: $blue;
+                        }
+                    }
+                    
+                    p{
+                        margin-bottom: 1.5rem;
+                    }
+                        
+                    p:first-of-type{
+                        
+                        font-size: 3rem;
+                        font-weight: 800;
+                    }
+                    
+                    p:last-of-type{
+                        
+                        font-size: 1.4rem;
+                        color: $darkGrey;
                     }
                 }
             }
             
-            &>section{
+            &>section:last-of-type{
                 
-                width: 50%;
+                    background-color: $lightGrey;
+                    padding: 4rem;
             }
         }
         
         &>main{
             
-            /**********DISPLAY DES POSTS PRINCIPAUX**********/
+            display: grid;
+            grid-template-columns: 70% 30%;
+            padding: 0 5vw;
             
-            article.main-post{
+            /**********DISPLAY DES SECTIONS**********/
+            
+            &>section{
                 
-                &header{
+                display: grid;
+                padding: 5vh 0;
+                
+                h2{
                     
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+            }
+            
+            &>section#featured-posts{
+                
+                grid-column: 1/3;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                h2{
+                    
+                    grid-column: 1/2;
+                }
+                
+                ul{
+                    
+                    grid-column: 2/4;
+                    display: flex;
+                    flex-direction: row;
+                    align-self: end;
+                    
+                    li{
+                        margin-left: 1rem;
+                        color: $grey;
+                    }
+                }
+                
+            }
+            
+            &>section#travel-tips{
+                
+                grid-column: 1/2;
+            }
+            
+            &>section#latest-posts{
+                
+                grid-column: 1/2;
+            }
+            
+            &>section#others{
+                
+                grid-column: 1/3;
+            }
+            
+            &>aside{
+                
+                grid-column: 2/3;
+            }
+            /**********DISPLAY DES POSTS ASSOCIÉS**********/
+            
+            article.featured-post{
+                
+                &>header{
+                    
+                    &>figure{
+                        
+                        &>img{
+                            
+                            width: 100%;
+                        }
+                    }
                 }
                 
                 &>section{
@@ -104,6 +312,23 @@ html{
             
             /**********DISPLAY DU POST MIS EN AVANT**********/
             
+            article.ahead-post{
+                
+                grid-column: 1/3;
+                    
+                &>figure{
+                    
+                    &>img{
+                        
+                        width: 100%;
+                    }
+                }
+            
+                
+                &>section{
+                    
+                }
+            }
             /**********DISPLAY DES DERNIERS POSTS**********/
             
             /**********DISPLAY DES POSTS DE L'ASIDE**********/
